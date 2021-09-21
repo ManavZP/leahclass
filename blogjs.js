@@ -12,7 +12,7 @@ function snapTop(){
 
 function lastPage(){
 
-    currentPage = "games"
+    currentPage = "work5"
     document.getElementById("work1").style.display = "none";
     document.getElementById("work2").style.display = "none";
     document.getElementById("work3").style.display = "none";
@@ -54,11 +54,11 @@ function nextPage(){
         currentPage = "work5"
         document.getElementById("work4").style.display = "none";
         document.getElementById("work5").style.display = "flex";
-    }//else if(currentPage === "work5"){
-    //     currentPage = "about";
-    //     document.getElementById("work5").style.display = "none";
-    //     document.getElementById("work1").style.display = "flex";
-    // }
+    }else if(currentPage === "work5"){
+         currentPage = "about";
+         document.getElementById("work5").style.display = "none";
+         document.getElementById("work1").style.display = "flex";
+     }
 
 }
 
