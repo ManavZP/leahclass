@@ -12,12 +12,13 @@ function snapTop(){
 
 function lastPage(){
 
-    currentPage = "work5"
+    currentPage = "work6"
     document.getElementById("work1").style.display = "none";
     document.getElementById("work2").style.display = "none";
     document.getElementById("work3").style.display = "none";
     document.getElementById("work4").style.display = "none";
-    document.getElementById("work5").style.display = "flex";
+    document.getElementById("work5").style.display = "none";
+    document.getElementById("work6").style.display = "flex";
 
     console.log(currentPage + " ");
 
@@ -55,10 +56,14 @@ function nextPage(){
         document.getElementById("work4").style.display = "none";
         document.getElementById("work5").style.display = "flex";
     }else if(currentPage === "work5"){
-         currentPage = "about";
+         currentPage = "work6";
          document.getElementById("work5").style.display = "none";
-         document.getElementById("work1").style.display = "flex";
-     }
+         document.getElementById("work6").style.display = "flex";
+     }else if(currentPage === "work6"){
+        currentPage = "about";
+        document.getElementById("work6").style.display = "none";
+        document.getElementById("work1").style.display = "flex";
+    }
 
 }
 
@@ -136,4 +141,28 @@ function logPosition() {
 function openTab(){
     window.open("mainPage.html", '_blank');
     document.getElementById("name").id = "dragonsCode9982";
+}
+
+
+function goAss1(){
+    currentPage = "work6"
+    document.getElementById("work1").style.display = "none";
+    document.getElementById("work2").style.display = "none";
+    document.getElementById("work3").style.display = "none";
+    document.getElementById("work4").style.display = "none";
+    document.getElementById("work5").style.display = "none";
+    document.getElementById("work6").style.display = "flex";
+
+    console.log(currentPage + " ");
+}
+function goHome(){
+    currentPage = "about"
+    document.getElementById("work1").style.display = "flex";
+    document.getElementById("work2").style.display = "none";
+    document.getElementById("work3").style.display = "none";
+    document.getElementById("work4").style.display = "none";
+    document.getElementById("work5").style.display = "none";
+    document.getElementById("work6").style.display = "none";
+
+    console.log(currentPage + " ");
 }
