@@ -60,8 +60,12 @@ function nextPage(){
          document.getElementById("work5").style.display = "none";
          document.getElementById("work6").style.display = "flex";
      }else if(currentPage === "work6"){
-        currentPage = "about";
+        currentPage = "work7";
         document.getElementById("work6").style.display = "none";
+        document.getElementById("work7").style.display = "flex";
+    }else if(currentPage === "work7"){
+        currentPage = "about";
+        document.getElementById("work7").style.display = "none";
         document.getElementById("work1").style.display = "flex";
     }
 
