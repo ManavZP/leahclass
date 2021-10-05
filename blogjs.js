@@ -20,7 +20,8 @@ function lastPage(){
     document.getElementById("work5").style.display = "none";
     document.getElementById("work6").style.display = "none";
     document.getElementById("work7").style.display = "none";
-    document.getElementById("work8").style.display = "flex";
+    document.getElementById("work8").style.display = "none";
+    document.getElementById("work9").style.display = "flex";
 
     console.log(currentPage + " ");
 
@@ -69,9 +70,13 @@ function nextPage(){
         currentPage = "work8";
         document.getElementById("work7").style.display = "none";
         document.getElementById("work8").style.display = "flex";
-    }else if(currentPage === "work7"){
-        currentPage = "about";
+    }else if(currentPage === "work8"){
+        currentPage = "work9";
         document.getElementById("work8").style.display = "none";
+        document.getElementById("work9").style.display = "flex";
+    }else if(currentPage === "work9"){
+        currentPage = "about";
+        document.getElementById("work9").style.display = "none";
         document.getElementById("work1").style.display = "flex";
     }
 
@@ -164,6 +169,21 @@ function goAss1(){
     document.getElementById("work6").style.display = "flex";
     document.getElementById("work7").style.display = "none";
     document.getElementById("work8").style.display = "none";
+    document.getElementById("work9").style.display = "none";
+
+    console.log(currentPage + " ");
+}
+function goAss2(){
+    currentPage = "work8"
+    document.getElementById("work1").style.display = "none";
+    document.getElementById("work2").style.display = "none";
+    document.getElementById("work3").style.display = "none";
+    document.getElementById("work4").style.display = "none";
+    document.getElementById("work5").style.display = "none";
+    document.getElementById("work6").style.display = "none";
+    document.getElementById("work7").style.display = "none";
+    document.getElementById("work8").style.display = "none";
+    document.getElementById("work9").style.display = "flex";
 
     console.log(currentPage + " ");
 }
@@ -177,6 +197,7 @@ function goHome(){
     document.getElementById("work6").style.display = "none";
     document.getElementById("work7").style.display = "none";
     document.getElementById("work8").style.display = "none";
+    document.getElementById("work9").style.display = "none";
 
     console.log(currentPage + " ");
 }
