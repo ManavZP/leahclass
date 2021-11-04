@@ -23,7 +23,8 @@ function lastPage(){
     document.getElementById("work8").style.display = "none";
     document.getElementById("work9").style.display = "none";
     document.getElementById("work10").style.display = "none";
-    document.getElementById("work11").style.display = "flex";
+    document.getElementById("work11").style.display = "none";
+    document.getElementById("work12").style.display = "flex";
 
 
     console.log(currentPage + " ");
@@ -86,9 +87,13 @@ function nextPage(){
         document.getElementById("work10").style.display = "none";
         document.getElementById("work11").style.display = "flex";
     }else if(currentPage === "work11"){
+        currentPage = "work12";
+        document.getElementById("work11").style.display = "none";
+        document.getElementById("work12").style.display = "flex";
+    }else if(currentPage === "work12"){
         currentPage = "about";
-        document.getElementById("work10").style.display = "none";
-        document.getElementById("work1").style.display = "flex";
+        document.getElementById("work11").style.display = "none";
+        document.getElementById("work12").style.display = "flex";
     }
 
 }
@@ -183,6 +188,8 @@ function goAss1(){
     document.getElementById("work9").style.display = "none";
     document.getElementById("work10").style.display = "none";
     document.getElementById("work11").style.display = "none";
+    document.getElementById("work12").style.display = "none";
+
 
 
     console.log(currentPage + " ");
@@ -200,6 +207,7 @@ function goAss2(){
     document.getElementById("work9").style.display = "flex";
     document.getElementById("work10").style.display = "none";
     document.getElementById("work11").style.display = "none";
+    document.getElementById("work12").style.display = "none";
 
 
     console.log(currentPage + " ");
@@ -218,6 +226,7 @@ function goAss3(){
     document.getElementById("work9").style.display = "none";
     document.getElementById("work10").style.display = "flex";
     document.getElementById("work11").style.display = "none";
+    document.getElementById("work12").style.display = "none";
 
 
     console.log(currentPage + " ");
@@ -236,6 +245,7 @@ function goAss4(){
     document.getElementById("work9").style.display = "none";
     document.getElementById("work10").style.display = "none";
     document.getElementById("work11").style.display = "flex";
+    document.getElementById("work12").style.display = "none";
 
 
     console.log(currentPage + " ");
@@ -253,6 +263,7 @@ function goHome(){
     document.getElementById("work9").style.display = "none";
     document.getElementById("work10").style.display = "none";
     document.getElementById("work11").style.display = "none";
+    document.getElementById("work12").style.display = "none";
 
 
     console.log(currentPage + " ");
