@@ -24,7 +24,8 @@ function lastPage(){
     document.getElementById("work9").style.display = "none";
     document.getElementById("work10").style.display = "none";
     document.getElementById("work11").style.display = "none";
-    document.getElementById("work12").style.display = "flex";
+    document.getElementById("work12").style.display = "none";
+    document.getElementById("work13").style.display = "flex";
 
 
     console.log(currentPage + " ");
@@ -91,9 +92,13 @@ function nextPage(){
         document.getElementById("work11").style.display = "none";
         document.getElementById("work12").style.display = "flex";
     }else if(currentPage === "work12"){
+        currentPage = "work13";
+        document.getElementById("work12").style.display = "none";
+        document.getElementById("work13").style.display = "flex";
+    }else if(currentPage === "work13"){
         currentPage = "about";
-        document.getElementById("work11").style.display = "none";
-        document.getElementById("work12").style.display = "flex";
+        document.getElementById("work13").style.display = "none";
+        document.getElementById("work1").style.display = "flex";
     }
 
 }
